@@ -1,0 +1,210 @@
+
+header {
+  height: auto;               
+  min-height: 200px;          
+  width: 100%;
+  background-color: rgb(110, 146, 170);
+  display: flex;
+  flex-wrap: wrap;            
+  padding: 20px;
+  border: 2px solid rgb(24, 53, 220);
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+
+.left h1 {
+  position: relative;
+  right: 0;                  /* Remove fixed right offset */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  color: black;              /* 'dark black' is invalid, use 'black' */
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.right {
+  height: 150px;             /* Reduce height for smaller devices */
+  width: 150px;              /* Same here */
+  border: 2px solid black;
+  border-radius: 50%;
+  background-image: url(apj.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;            /* Center on small screens */
+}
+
+/* 3. Main Section */
+.main {
+  margin-top: 2px;
+  width: 100%;
+  height: auto;               /* Change fixed height */
+  padding-top: 10px;
+  background-color: rgb(185, 211, 246);
+  box-sizing: border-box;
+}
+
+marquee {
+  width: 100%;               /* Use full width */
+  max-width:90%;          /* Max width to keep control */
+  font-size: x-large;
+  text-transform: uppercase;
+  position: relative;
+  left: 0;                   /* Remove fixed left */
+  color: rgb(65, 88, 88);
+  margin: 10px auto;
+  display: block;
+}
+
+.main p {
+  margin: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  text-align: justify;
+  line-height: 1.3;
+}
+
+/* 4. Generic Headings */
+h1 {
+  text-align: justify;
+  margin: 5px;
+  text-decoration: solid;   /* This doesn’t do anything, remove or fix */
+  text-transform: capitalize;
+}
+
+/* 5. Page */
+.page {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+/* 6. Book Section Flexbox */
+.book {
+  display: flex;
+  flex-wrap: wrap;             /* Allow wrap on smaller screens */
+  justify-content: space-evenly;
+  margin: 1px;
+  gap: 15px;                   /* Add space between items */
+}
+
+/* 7. Photos Responsive */
+.photo1, .photo2, .photo3, .photo4 {
+  height: 250px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-size: cover;
+     background-image: url(apj.jpg);
+  background-position: center;
+  transition: box-shadow 1s, border-radius 1s;
+}
+
+.photo1:hover, .photo2:hover, .photo3:hover, .photo4:hover {
+  box-shadow: 2px 4px 8px rgb(229, 232, 102);
+  border-radius: 50%;
+}
+
+/* 8. Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-evenly;
+  background-color: rgb(185, 211, 246);
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.text1, .text2, .text3, .text4 {
+  position: static;      /* Remove fixed positioning */
+  text-transform: capitalize;
+  margin: 5px 10px;
+}
+
+/* 9. Links */
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+/* 10. Last Section */
+.last {
+  background-color: rgb(251, 251, 182);
+  height: 70px;
+  width: 100%;
+}
+
+/* -------- MEDIA QUERIES -------- */
+
+/* For tablets and larger phones */
+@media (max-width: 768px) {
+  .right {
+    height: 120px;
+    width: 120px;
+  }
+   
+
+
+
+  .photo1, .photo2, .photo3, .photo4 {
+    width: 150px;
+    height: 200px;
+ 
+   
+  }
+
+  .book {
+    justify-content: center;
+  }
+}
+
+/* For small phones */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column; /* Stack left and right vertically */
+    align-items: center;
+    height: auto;
+  }
+
+  .left h1 {
+    right: 0;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .right {
+    height: 100px;
+    width: 100px;
+  }
+
+  .book {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .photo1, .photo2, .photo3, .photo4 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 4 / 5;
+     
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text1, .text2, .text3, .text4 {
+    margin: 10px 0;
+  }
+}
+
+
+
