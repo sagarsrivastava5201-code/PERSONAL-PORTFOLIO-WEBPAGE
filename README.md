@@ -41,3 +41,4 @@ Thank you for viewing my portfolio!
 
 
 #OUTPUT
+<img width="1817" height="920" alt="Image" src="https://github.com/user-attachments/assets/b4f6b83e-57ca-4da3-8a74-255728101af0" />
