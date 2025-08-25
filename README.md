@@ -40,5 +40,9 @@ Please feel free to reach out via the Contact Me section — you’ll find my em
 Thank you for viewing my portfolio!
 
 
+
+
 #OUTPUT
+<img width="1801" height="903" alt="Image" src="https://github.com/user-attachments/assets/01f402dc-1201-472d-be10-d980050dfd2e" />
+After click = "VIEW PROJECT" (APJ ABDUL KALAM )
 <img width="1817" height="920" alt="Image" src="https://github.com/user-attachments/assets/b4f6b83e-57ca-4da3-8a74-255728101af0" />
